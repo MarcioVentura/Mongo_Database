@@ -1,0 +1,25 @@
+mongo university:
+marcio_ventura@yahoo.com.br
+de sempre
+
+ATLAS: M@rcio123
+
+
+
+Q1 - Customer / Subscriber 
+
+
+Q2 - Three fields - 2 documents and 1 string 
+
+
+Q3 - double 
+
+
+Q4 - 2
+
+
+Q5 - find( {}, { title: 1, _id: 0 })
+         find( {year: 1964}, { title: 1, _id: 0 })
+
+
+Q6 - 8

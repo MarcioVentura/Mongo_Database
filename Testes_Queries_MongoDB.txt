@@ -1,0 +1,183 @@
+ATIVANDO O MONGO DATABASE A PARTIR DE UM TERMINAL:
+C:\Users\Marcio Ventura>mongod
+2018-06-29T10:37:47.692-0800 I CONTROL  [initandlisten] MongoDB starting : pid=7848 port=27017 dbpath=C:\data\db\ 64-bit host=DESKTOP-NNCDOF5
+2018-06-29T10:37:47.692-0800 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2018-06-29T10:37:47.692-0800 I CONTROL  [initandlisten] db version v3.6.4
+2018-06-29T10:37:47.692-0800 I CONTROL  [initandlisten] git version: d0181a711f7e7f39e60b5aeb1dc7097bf6ae5856
+2018-06-29T10:37:47.692-0800 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2o-fips  27 Mar 2018
+2018-06-29T10:37:47.692-0800 I CONTROL  [initandlisten] allocator: tcmalloc
+2018-06-29T10:37:47.692-0800 I CONTROL  [initandlisten] modules: enterprise
+2018-06-29T10:37:47.692-0800 I CONTROL  [initandlisten] build environment:
+2018-06-29T10:37:47.692-0800 I CONTROL  [initandlisten]     distmod: windows-64
+2018-06-29T10:37:47.693-0800 I CONTROL  [initandlisten]     distarch: x86_64
+2018-06-29T10:37:47.693-0800 I CONTROL  [initandlisten]     target_arch: x86_64
+2018-06-29T10:37:47.693-0800 I CONTROL  [initandlisten] options: {}
+2018-06-29T10:37:47.694-0800 I -        [initandlisten] Detected data files in C:\data\db\ created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+2018-06-29T10:37:47.695-0800 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3523M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2018-06-29T10:37:48.001-0800 I STORAGE  [initandlisten] WiredTiger message [1530297468:572][7848:140722838060112], txn-recover: Main recovery loop: starting at 9/27136
+2018-06-29T10:37:48.126-0800 I STORAGE  [initandlisten] WiredTiger message [1530297468:126222][7848:140722838060112], txn-recover: Recovering log 9 through 10
+2018-06-29T10:37:48.236-0800 I STORAGE  [initandlisten] WiredTiger message [1530297468:235998][7848:140722838060112], txn-recover: Recovering log 10 through 10
+2018-06-29T10:37:48.436-0800 I STORAGE  [initandlisten] WiredTiger message [1530297468:436400][7848:140722838060112], txn-recover: Set global recovery timestamp: 0
+2018-06-29T10:37:48.713-0800 I CONTROL  [initandlisten]
+2018-06-29T10:37:48.714-0800 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-06-29T10:37:48.716-0800 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-06-29T10:37:48.717-0800 I CONTROL  [initandlisten]
+2018-06-29T10:37:48.719-0800 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2018-06-29T10:37:48.721-0800 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server.
+2018-06-29T10:37:48.722-0800 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP
+2018-06-29T10:37:48.724-0800 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2018-06-29T10:37:48.727-0800 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2018-06-29T10:37:48.729-0800 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2018-06-29T10:37:48.730-0800 I CONTROL  [initandlisten]
+2018-06-29T10:37:48.731-0800 I CONTROL  [initandlisten]
+2018-06-29T10:37:48.732-0800 I CONTROL  [initandlisten] ** WARNING: The file system cache of this machine is configured to be greater than 40% of the total memory. This can lead to increased memory pressure and poor performance.
+2018-06-29T10:37:48.733-0800 I CONTROL  [initandlisten] See http://dochub.mongodb.org/core/wt-windows-system-file-cache
+2018-06-29T10:37:48.734-0800 I CONTROL  [initandlisten]
+2018-06-29T15:37:49.119-0300 W FTDC     [initandlisten] Failed to initialize Performance Counters for FTDC: WindowsPdhError: PdhExpandCounterPathW failed with 'O objeto especificado não foi encontrado no computador.' for counter '\Memory\Available Bytes'
+2018-06-29T15:37:49.119-0300 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'C:/data/db/diagnostic.data'
+2018-06-29T15:37:49.125-0300 I NETWORK  [initandlisten] waiting for connections on port 27017
+
+******ESTÁ PRONTO E DISPONÍVEL PARA USO...
+
+ABRA OUTRO TERMINAL E COMEÇE A TRABALHAR: DIGITE SIMPLESMENTE
+C:\Users\Marcio Ventura>mongo
+MongoDB shell version v3.6.4
+connecting to: mongodb://127.0.0.1:27017
+MongoDB server version: 3.6.4
+Server has startup warnings:
+2018-06-29T10:37:48.713-0800 I CONTROL  [initandlisten]
+2018-06-29T10:37:48.714-0800 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2018-06-29T10:37:48.716-0800 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2018-06-29T10:37:48.717-0800 I CONTROL  [initandlisten]
+2018-06-29T10:37:48.719-0800 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2018-06-29T10:37:48.721-0800 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server.
+2018-06-29T10:37:48.722-0800 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP
+2018-06-29T10:37:48.724-0800 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2018-06-29T10:37:48.727-0800 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2018-06-29T10:37:48.729-0800 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2018-06-29T10:37:48.730-0800 I CONTROL  [initandlisten]
+2018-06-29T10:37:48.731-0800 I CONTROL  [initandlisten]
+2018-06-29T10:37:48.732-0800 I CONTROL  [initandlisten] ** WARNING: The file system cache of this machine is configured to be greater than 40% of the total memory. This can lead to increased memory pressure and poor performance.
+2018-06-29T10:37:48.733-0800 I CONTROL  [initandlisten] See http://dochub.mongodb.org/core/wt-windows-system-file-cache
+2018-06-29T10:37:48.734-0800 I CONTROL  [initandlisten]
+MongoDB Enterprise >
+
+comandos básicos:
+show dbs/databases - para ver quais bancos existem na plataforma
+use <db> para se conectar no banco de dados
+show collections - para ver quais tabelas existem no banco de dados 
+
+NO MONGODB O INSERT QUE JÁ CRIA A TABELA:
+MongoDB Enterprise > db.local.insert( {
+... nome: "Marcio Ventura",cidade: "Sao Paulo", estado: "SP", documento1: "RG", numdoc1: "3456", documento2: "CPF", numdoc2: "0987"}
+... )
+WriteResult({ "nInserted" : 1 })
+MongoDB Enterprise >
+
+
+SELECT FULL:
+MongoDB Enterprise > db.local.find()
+{ "_id" : ObjectId("5b36729257f251a3add692e6"), "nome" : "Marcio Ventura", "cidade" : "Sao Paulo", "estado" : "SP", "documento1" : "RG", "numdoc1" : "3456", "documento2" : "CPF", "numdoc2" : "0987" }
+
+
+SELECT COM WHERE:
+MongoDB Enterprise > db.local.find({documento2: "CPF"})
+{ "_id" : ObjectId("5b36729257f251a3add692e6"), "nome" : "Marcio Ventura", "cidade" : "Sao Paulo", "estado" : "SP", "documento1" : "RG", "numdoc1" : "3456", "documento2" : "CPF", "numdoc2" : "0987" }
+MongoDB Enterprise > {a: {$type: "string"}}
+
+
+SELECT COM LIKE PARA TUDO QUE VEM DEPOIS DE "34":
+MongoDB Enterprise > db.local.find({numdoc1: /^34/})
+{ "_id" : ObjectId("5b36729257f251a3add692e6"), "nome" : "Marcio Ventura", "cidade" : "Sao Paulo", "estado" : "SP", "documento1" : "RG", "numdoc1" : "3456", "documento2" : "CPF", "numdoc2" : "0987" }
+MongoDB Enterprise >
+
+
+INSERT PARA MUITOS REGISTROS:
+db.local.insert( 
+[
+{nome: "Osvaldo Ventura",cidade: "Sao Paulo", estado: "SP", documento1: "RG", numdoc1: "5432", documento2: "CPF", numdoc2: "7654"},
+{nome: "neymar",cidade: "santos", estado: "SP", documento1: "RG", numdoc1: "9999", documento2: "CPF", numdoc2: "8888"},
+{nome: "TITE",cidade: "pORTO aLEGRE", estado: "rIO GRANDE do SuL", documento1: "RG", numdoc1: "1111", documento2: "CPF", numdoc2: "222"},
+{nome: "Cassio", cidade: "Barueri", estado: "São Paulo", documento1: "RG", numdoc1: "8520", documento2: "CPF", numdoc2: "9630"}
+]
+)
+
+
+EXECUTANDO MUITOS INSERTS:
+2018-06-29T15:19:10.206-0300 E QUERY    [thread1] SyntaxError: missing ] after element list @(shell):6:0
+MongoDB Enterprise > db.local.find()
+{ "_id" : ObjectId("5b36729257f251a3add692e6"), "nome" : "Marcio Ventura", "cidade" : "Sao Paulo", "estado" : "SP", "documento1" : "RG", "numdoc1" : "3456", "documento2" : "CPF", "numdoc2" : "0987" }
+MongoDB Enterprise > db.local.insert(
+... [
+... {nome: "Osvaldo Ventura",cidade: "Sao Paulo", estado: "SP", documento1: "RG", numdoc1: "5432", documento2: "CPF", numdoc2: "7654"},
+... {nome: "neymar",cidade: "santos", estado: "SP", documento1: "RG", numdoc1: "9999", documento2: "CPF", numdoc2: "8888"},
+... {nome: "TITE",cidade: "pORTO aLEGRE", estado: "rIO GRANDE do SuL", documento1: "RG", numdoc1: "1111", documento2: "CPF", numdoc2: "222"},
+... {nome: "Cassio", cidade: "Barueri", estado: "São Paulo", documento1: "RG", numdoc1: "8520", documento2: "CPF", numdoc2: "9630"}
+... ]
+... )
+BulkWriteResult({
+        "writeErrors" : [ ],
+        "writeConcernErrors" : [ ],
+        "nInserted" : 4,
+        "nUpserted" : 0,
+        "nMatched" : 0,
+        "nModified" : 0,
+        "nRemoved" : 0,
+        "upserted" : [ ]
+})
+MongoDB Enterprise >
+
+
+SELECT USANDO A PESQUISA PELA CHAVE:
+MongoDB Enterprise > db.local.find({numdoc2: "9630"})
+{ "_id" : ObjectId("5b36784557f251a3add692ea"), "nome" : "Cassio", "cidade" : "Barueri", "estado" : "São Paulo", "documento1" : "RG", "numdoc1" : "8520", "documento2" : "CPF", "numdoc2" : "9630" }
+MongoDB Enterprise >
+
+
+INSERT DUPLICADO POR COMPLETO:
+MongoDB Enterprise > db.local.insert( {
+nome: "Marcio Ventura",cidade: "Sao Paulo", estado: "SP", documento1: "RG", numdoc1: "3456", documento2: "CPF", numdoc2: "0987"}
+)
+WriteResult({ "nInserted" : 1 })
+
+FAZENDO SELECT FULL:
+MongoDB Enterprise > db.local.find()
+{ "_id" : ObjectId("5b36729257f251a3add692e6"), "nome" : "Marcio Ventura", "cidade" : "Sao Paulo", "estado" : "SP", "documento1" : "RG", "numdoc1" : "3456", "documento2" : "CPF", "numdoc2" : "0987" }
+{ "_id" : ObjectId("5b36784557f251a3add692e7"), "nome" : "Osvaldo Ventura", "cidade" : "Sao Paulo", "estado" : "SP", "documento1" : "RG", "numdoc1" : "5432", "documento2" : "CPF", "numdoc2" : "7654" }
+{ "_id" : ObjectId("5b36784557f251a3add692e8"), "nome" : "neymar", "cidade" : "santos", "estado" : "SP", "documento1" : "RG", "numdoc1" : "9999", "documento2" : "CPF", "numdoc2" : "8888" }
+{ "_id" : ObjectId("5b36784557f251a3add692e9"), "nome" : "TITE", "cidade" : "pORTO aLEGRE", "estado" : "rIO GRANDE do SuL", "documento1" : "RG", "numdoc1" : "1111", "documento2" : "CPF", "numdoc2" : "222" }
+{ "_id" : ObjectId("5b36784557f251a3add692ea"), "nome" : "Cassio", "cidade" : "Barueri", "estado" : "São Paulo", "documento1" : "RG", "numdoc1" : "8520", "documento2" : "CPF", "numdoc2" : "9630" }
+{ "_id" : ObjectId("5b367a0657f251a3add692eb"), "nome" : "Marcio Ventura", "cidade" : "Sao Paulo", "estado" : "SP", "documento1" : "RG", "numdoc1" : "3456", "documento2" : "CPF", "numdoc2" : "0987" }
+MongoDB Enterprise >
+
+
+INSERINDO DUPLICADO MAIS UMA VEZ:
+MongoDB Enterprise > db.local.insert( {
+... nome: "Marcio Ventura",cidade: "Sao Paulo", estado: "SP", documento1: "RG", numdoc1: "3456", documento2: "CPF", numdoc2: "0987"}
+... )
+WriteResult({ "nInserted" : 1 })
+
+FAZENDO SELECT FULL:
+MongoDB Enterprise > db.local.find()
+{ "_id" : ObjectId("5b36729257f251a3add692e6"), "nome" : "Marcio Ventura", "cidade" : "Sao Paulo", "estado" : "SP", "documento1" : "RG", "numdoc1" : "3456", "documento2" : "CPF", "numdoc2" : "0987" }
+{ "_id" : ObjectId("5b36784557f251a3add692e7"), "nome" : "Osvaldo Ventura", "cidade" : "Sao Paulo", "estado" : "SP", "documento1" : "RG", "numdoc1" : "5432", "documento2" : "CPF", "numdoc2" : "7654" }
+{ "_id" : ObjectId("5b36784557f251a3add692e8"), "nome" : "neymar", "cidade" : "santos", "estado" : "SP", "documento1" : "RG", "numdoc1" : "9999", "documento2" : "CPF", "numdoc2" : "8888" }
+{ "_id" : ObjectId("5b36784557f251a3add692e9"), "nome" : "TITE", "cidade" : "pORTO aLEGRE", "estado" : "rIO GRANDE do SuL", "documento1" : "RG", "numdoc1" : "1111", "documento2" : "CPF", "numdoc2" : "222" }
+{ "_id" : ObjectId("5b36784557f251a3add692ea"), "nome" : "Cassio", "cidade" : "Barueri", "estado" : "São Paulo", "documento1" : "RG", "numdoc1" : "8520", "documento2" : "CPF", "numdoc2" : "9630" }
+{ "_id" : ObjectId("5b367a0657f251a3add692eb"), "nome" : "Marcio Ventura", "cidade" : "Sao Paulo", "estado" : "SP", "documento1" : "RG", "numdoc1" : "3456", "documento2" : "CPF", "numdoc2" : "0987" }
+{ "_id" : ObjectId("5b367a8e57f251a3add692ec"), "nome" : "Marcio Ventura", "cidade" : "Sao Paulo", "estado" : "SP", "documento1" : "RG", "numdoc1" : "3456", "documento2" : "CPF", "numdoc2" : "0987" }
+MongoDB Enterprise >
+
+
+ERA PRA TER RECLAMADO A REPETIÇÃO DE VALORES... PORQUE ESTOU USANDO AS CHAVES DIRETAS... VOU INVESTIGAR 
+
+
+db.local.insert({nome: "marcos viana",cidade: "osasco", estado: "SP", documento1: "RG", numdoc1: "3456", documento2: "CPF", numdoc2: "0987"})
+
+
+... )
+
+
+
+
+

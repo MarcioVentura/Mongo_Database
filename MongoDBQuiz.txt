@@ -1,0 +1,43 @@
+id cast director genre plot, 
+
+
+quiz 1.1
+Nem todos os documentos nesta coleção têm o mesmo tipo de valor para esse campo.
+A maioria dos documentos nesta coleção contém valores int32 para esse campo.
+
+db_documents mostra a "temperatura" (object)
+
+ documentos com campos informados... 
+expandindo ve a qualidade /tipo de dado(qualitystrting/value=number)
+lab 1.2 - number 
+
+campos com arrays e valores
+
+skycoverlayer - array -- 0-object value=02, quality=1
+skydonditionobservation - object
+atmosphericpressurechange - object
+1.4 quiz - hich of the following are types of data Compass (and MongoDB) recognizes and specifically supports? arrays, geospatioal data, documents
+
+filter collections with queries
+schema - citibike.trips = id objectd, bikeid, int32
+end_station_name - string
+gender - int32, 
+id_objected
+bikeid - number
+tripduration - int32, sgte:2000,slt:4000
+
+1950-55 2%
+55-60 5%
+lab 1.6 60-65 7% -----750 okokok
+75-80 12%
+80-85 18%
+85-90 20%
+1970-1990 1113617
+
+ships.shipwrecks - 
+
+WEEK 2 - 
+
+CRUD - create, read, update e delete
+
+

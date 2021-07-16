@@ -1,0 +1,27 @@
+Como parar o MongoDB?
+by Fabiano Adelino 3 YEARS AGO LESS THAN A MINUTEREAD
+
+Iniciar e finalizar o MongoDB é muito simples, o manual é bem completo e explica como fazer pelo terminal, cli, drivers e etc. 
+Também explica a maneira correta de "stopar" o banco de dados, pois se for feito da maneira errada, existe o risco de 
+corromper dados e ter problemas com os arquivos como mongod.lock e wiredtiger.lock.
+
+Se você o instalou usando gerenciador de pacotes do Ubuntu ou Debian, pode dar o stop no banco com os seguintes comandos:
+
+Upstart: sudo service mongod stop
+Sysvinit: sudo /etc/init.d/mongod stop
+
+No Mac OS X:
+
+Ache o PID com o comando TOP no terminal;
+Mate o processo: kill
+
+Em sistemas como o Red Hat:
+
+service mongod stop
+
+Ou no Windows:
+
+net stop MongoDB
+
+Para saber mais sobre problemas com shutdown e recovery: 
+https://docs.mongodb.com/manual/tutorial/recover-data-following-unexpected-shutdown/
